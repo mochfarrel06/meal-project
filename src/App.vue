@@ -8,17 +8,17 @@
       >
       <div class="flex items-center">
         <router-link
-          to="/"
+          :to="{ name: 'byName' }"
           class="inline-flex items-center px-2 h-full transition-colors hover:bg-purple-200"
           >Search Meals</router-link
         >
         <router-link
-          to="/"
+          :to="{ name: 'byLetter' }"
           class="inline-flex items-center px-2 h-full transition-colors hover:bg-purple-200"
           >Meals by Letter</router-link
         >
         <router-link
-          to="/"
+          :to="{ name: 'byIngredient' }"
           class="inline-flex items-center px-2 h-full transition-colors hover:bg-purple-200"
           >Meals by Ingredients</router-link
         >
