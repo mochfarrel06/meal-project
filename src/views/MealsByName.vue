@@ -15,7 +15,7 @@
       :key="meal.idMeal"
       class="bg-white shadow rounded-xl overflow-hidden"
     >
-      <router-link to="/">
+      <router-link :to="{ name: 'mealDetails', params: { id: meal.idMeal } }">
         <img
           :src="meal.strMealThumb"
           :alt="meal.strMeal"
