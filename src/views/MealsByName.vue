@@ -28,19 +28,8 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
           quaerat!
         </p>
-        <div class="mb-4">
-          <a
-            :href="meal.strYoutube"
-            target="_blank"
-            class="px-3 py-2 rounded border-2 bg-red-600 text-white border-red-600 hover:bg-red-700 transition-colors"
-            >Youtube</a
-          >
-          <router-link
-            to="/"
-            class="px-3 py-2 rounded border-2 bg-purple-600 text-white border-purple-600 hover:bg-purple-700 transition-colors"
-          >
-            View
-          </router-link>
+        <div class="mb-4 flex items-center justify-between">
+          <YouTubeButton :href="meal.strYoutube" />
         </div>
       </div>
     </div>
@@ -51,6 +40,7 @@
 import { computed, onMounted, ref } from "vue";
 import store from "../store";
 import { useRoute } from "vue-router";
+import YouTubeButton from "../components/YouTubeButton.vue";
 
 const route = useRoute();
 const keyword = ref("");
