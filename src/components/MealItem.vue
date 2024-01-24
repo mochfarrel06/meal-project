@@ -21,6 +21,8 @@
 </template>
 
 <script setup>
+import YouTubeButton from "./YouTubeButton.vue";
+
 const { meal } = defineProps({
   meal: {
     required: true,
