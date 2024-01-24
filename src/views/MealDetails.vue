@@ -36,7 +36,7 @@
         </ul>
       </div>
 
-      <div class="mt-10">
+      <div class="mt-10 flex gap-3">
         <YouTubeButton :href="meal.strYoutube" />
         <a
           :href="meal.strSource"
